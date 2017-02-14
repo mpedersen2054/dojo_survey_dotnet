@@ -12,7 +12,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>HELLO REZULTSZZZ!!</h1>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="results-container">
+                    <h1>Results</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="result-q">Full Name:</div>
+                            <div class="result-q">Dojo Location:</div>
+                            <div class="result-q">Favorite Language:</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="result-a">@ViewBag.fullName</div>
+                            <div class="result-a">@ViewBag.location</div>
+                            <div class="result-a">@ViewBag.language</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,24 @@
+.survey-container,
+.results-container {
+    margin-top: 100px;
+}
+
+.results-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.results-container h1 {
+    border-bottom: 1px solid #000;
+}
+
+.result-q,
+.result-a {
+    font-size: 20px;
+    margin: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.result-a {
+    font-weight: bold;
+}

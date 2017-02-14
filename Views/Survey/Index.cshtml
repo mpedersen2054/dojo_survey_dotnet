@@ -13,23 +13,25 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 col-md-offset-2 survey-container">
                 <h1>Dojo Survey</h1>
                 <div class="well">
                     <br>
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" action="/results" method="POST">
                         <div class="form-group">
                             <label for="#" class="col-sm-3 control-label">Your name</label>
                             <div class="col-sm-6">
-                            <input type="text" class="form-control">
+                                <input type="text" name="fullName" class="form-control" placeholder="Jon Doe...">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="#" class="col-sm-3 control-label">Dojo Location</label>
                             <div class="col-sm-6">
                             <select name="location" class="form-control">
-                                <option value="">Hello</option>
-                                <option value="">World</option>
+                                <option value="">Location</option>
+                                <option value="Seattle">Seattle</option>
+                                <option value="San Jose">San Jose</option>
+                                <option value="Chicago">Chicago</option>
                             </select>
                             </div>
                         </div>
@@ -37,8 +39,10 @@
                             <label for="#" class="col-sm-3 control-label">Favorite Language</label>
                             <div class="col-sm-6">
                             <select name="language" class="form-control">
-                                <option value="">Hello</option>
-                                <option value="">World</option>
+                                <option value="">Favorite Language</option>
+                                <option value="Javascript">Javascript</option>
+                                <option value="C Sharp">C#</option>
+                                <option value="Python">Python</option>
                             </select>
                             </div>
                         </div>

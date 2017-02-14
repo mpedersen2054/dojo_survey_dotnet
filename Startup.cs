@@ -10,6 +10,7 @@ namespace DojoSurvey
         }
         public void Configure(IApplicationBuilder app)
         {
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }

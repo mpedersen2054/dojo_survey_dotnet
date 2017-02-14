@@ -1,5 +1,5 @@
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+// using System.Threading.Tasks;
+// using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DojoSurvey.Controllers
@@ -11,6 +11,13 @@ namespace DojoSurvey.Controllers
         public IActionResult Index()
         {
             return View("Index");
+        }
+
+        [HttpGet]
+        [Route("results")]
+        public IActionResult Results()
+        {
+            return RedirectToAction("Index");
         }
     }
 }
